@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="YumeRise">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDBA74"/>
+      <stop offset="0.5" stop-color="#F9A8D4"/>
+      <stop offset="1" stop-color="#7C5CFC"/>
+    </linearGradient>
+    <radialGradient id="bgd" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#FFF7EC"/>
+      <stop offset="0.6" stop-color="#F3EEFF"/>
+      <stop offset="1" stop-color="#E4DCFB"/>
+    </radialGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7B8"/>
+      <stop offset="1" stop-color="#FDBA74"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDBA74"/>
+      <stop offset="1" stop-color="#F9A8D4"/>
+    </linearGradient>
+    <linearGradient id="h1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9B8FF"/>
+      <stop offset="1" stop-color="#B0A0F0"/>
+    </linearGradient>
+    <linearGradient id="h2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9DB4F5"/>
+      <stop offset="1" stop-color="#7C9CEB"/>
+    </linearGradient>
+    <linearGradient id="h3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6F97EA"/>
+      <stop offset="1" stop-color="#5B7FDC"/>
+    </linearGradient>
+    <clipPath id="disc"><circle cx="100" cy="100" r="84"/></clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="url(#ring)" stroke-width="3"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="url(#ring)" stroke-width="1" stroke-dasharray="2 4" opacity="0.7"/>
+  <circle cx="100" cy="100" r="84" fill="url(#bgd)"/>
+  <g stroke="url(#ray)" stroke-width="4" stroke-linecap="round">
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-180 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-157.5 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-135 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-112.5 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-90 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-67.5 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-45 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(-22.5 100 92)"/>
+    <line x1="100" y1="42" x2="100" y2="28" transform="rotate(0 100 92)"/>
+  </g>
+  <circle cx="100" cy="92" r="32" fill="url(#sun)"/>
+  <circle cx="100" cy="92" r="24" fill="#FFF4DC" opacity="0.5"/>
+  <g clip-path="url(#disc)">
+    <path d="M10 126 Q50 106 92 124 T190 118 V200 H10Z" fill="url(#h1)"/>
+    <path d="M10 142 Q64 122 118 140 T190 136 V200 H10Z" fill="url(#h2)"/>
+    <path d="M10 160 Q90 146 190 158 V200 H10Z" fill="url(#h3)"/>
+  </g>
+  <rect x="78" y="172" width="44" height="3" rx="1.5" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="86" y="178" width="28" height="2.5" rx="1.25" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="93" y="183" width="14" height="2" rx="1" fill="#FFFFFF" opacity="0.35"/>
+  <path d="M100 124 C104 118 104 112 100 106 C96 112 96 118 100 124Z" fill="#F9A8D4"/>
+  <path d="M98 124 C92 122 90 116 93 112 C96 115 97 119 98 124Z" fill="#F9A8D4" opacity="0.8"/>
+  <path d="M102 124 C108 122 110 116 107 112 C104 115 103 119 102 124Z" fill="#F9A8D4" opacity="0.8"/>
+</svg>

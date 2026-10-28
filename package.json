@@ -1,0 +1,85 @@
+{
+  "name": "yumerise-next",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "YumeRise Next — calm productivity app for phone and desktop (Vite web + Capacitor 8 Android + Electron desktop).",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test",
+    "android:add": "cap add android",
+    "android:sync": "cap sync android",
+    "dev:desktop": "node desktop/dev.mjs",
+    "build:desktop": "vite build && electron-builder --win nsis",
+    "build:desktop:dir": "vite build && electron-builder --win dir"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "jspdf": "^4.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8",
+    "vite": "^6.3.5"
+  },
+  "build": {
+    "appId": "com.yumerise.next",
+    "productName": "Yumerise",
+    "copyright": "Copyright © YumeRise",
+    "directories": {
+      "output": "release",
+      "buildResources": "desktop/build"
+    },
+    "files": [
+      "dist/**/*",
+      "desktop/main.cjs",
+      "desktop/preload.cjs",
+      "public/icon.svg",
+      "package.json"
+    ],
+    "extraMetadata": {
+      "main": "desktop/main.cjs"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Yumerise-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Yumerise"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.productivity",
+      "artifactName": "Yumerise-${version}.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Office",
+      "artifactName": "Yumerise-${version}.${ext}"
+    }
+  },
+  "allowScripts": {
+    "electron@34.5.8": true
+  }
+}

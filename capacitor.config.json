@@ -1,0 +1,8 @@
+{
+  "appId": "com.yumerise.next",
+  "appName": "YumeRise Next",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "app": "yumerise-next",
+  "version": 1,
+  "kind": "chatgpt-plan",
+  "exportedAt": "2026-10-23T09:00:00.000Z",
+  "tasks": [
+    {
+      "id": "task-2026-10-27-outline",
+      "title": "Outline the launch post",
+      "description": "",
+      "date": "2026-10-27",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "priority": "High",
+      "status": "todo",
+      "checklist": [
+        { "id": "step-1", "text": "Bullet points", "done": false },
+        { "id": "step-2", "text": "Pick screenshots", "done": false }
+      ]
+    },
+    {
+      "id": "task-2026-10-28-budget",
+      "title": "Review budget",
+      "description": "",
+      "date": "2026-10-28",
+      "startTime": "",
+      "endTime": "",
+      "priority": "Medium",
+      "status": "todo",
+      "checklist": []
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-read-2-books",
+      "title": "Read 2 books",
+      "kind": "active",
+      "progress": 30,
+      "target": 2,
+      "current": 0.6,
+      "unit": "books",
+      "note": ""
+    }
+  ],
+  "blocks": [
+    {
+      "id": "block-2026-10-27-morning",
+      "title": "Deep work: launch post",
+      "date": "2026-10-27",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "linkedTaskId": "task-2026-10-27-outline"
+    }
+  ]
+}
